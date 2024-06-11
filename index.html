@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="navbar">
+  <a class="name" href="index.html" style="float:left;">Zohra Younus</a>
+  <a href="javascript:void(0)">About Me</a>
+  <a href="robotics.html">Robotics</a>
+  <a class="active" href="index.html">Home</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Welcome!</h2>
+      <h5>June 11, 2024</h5>
+      <div class="fakeimg" style="height:270px;"><img style="height:250px;" src="./assets/java_mate.avif.png"></div>
+      <p>I created this webpage as part of my final high school senior project. I've been meaning to create a webpage under this name for years but never got around to doing so. Right now it looks a little more than rough because I made this all in one day due to heavy procrastination.
+    </div>
+    <div class="card">
+      <h3>What is this website for?</h3>
+      <p>Honestly no clue other than leaving some notes for future wannabe coders for the high school robotics team. Maybe I'll update it, maybe I won't.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>I'm Zohra Younus aka Korallen Lang. I got started in web design during the pandemic when I realized I could do something about the great irritation that the Weebly websites caused me. But while I was making a website, apparently my school realized they could update their website and it looks much neater now. And is up to date. Shame. My website went to the virtual recycle bin soon after. But now I have this. How wonderful.</p>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Please don't, that's creepy.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Published on June 11, 2024</p>
+  <p>&#169KorallenLang</p>
+</div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+</body>
+</html>

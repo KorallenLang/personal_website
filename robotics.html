@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="navbar">
+  <a class="name" href="index.html" style="float:left;">Zohra Younus</a>
+  <a href="javascript:void(0)">About Me</a>
+  <a class="active" href="robotics.html">Robotics</a>
+  <a href="index.html">Home</a>
+</div>
+
+<div class="lessons">
+  <div class="card">
+    <div class="container">
+      <a href="">The Common Words</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="container">
+      <a href="">Keep the Driver Station Happy</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="container">
+      <a href="">How do OpModes OpMode?</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="container">
+      <a href="">Hardware Mapping</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="container">
+      <a href="">The FTC SDK Library</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="container">
+      <a href="">Joystick Controlled Driving</a>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Published on June 11, 2024</p>
+  <p>&#169KorallenLang</p>
+</div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+</body>
+</html>
